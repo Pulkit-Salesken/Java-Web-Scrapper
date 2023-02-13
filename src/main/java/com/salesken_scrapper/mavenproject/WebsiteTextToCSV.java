@@ -44,10 +44,20 @@ public class WebsiteTextToCSV {
 				return null;
 
 			Document doc = Jsoup.connect(pageUrl).get();
-
+			
+			Elements divs = new Elements();
+			
 			ArrayList<Elements> allElements = new ArrayList<>();
 
-//			allElements.add(doc.getElementsByAttribute("div"));
+			Elements allDivs = doc.getElementsByTag("div");
+			for(Element div : allDivs) {
+				if(div.childrenSize() == 0) {
+					divs.add(div);
+				}
+			}
+			
+
+			allElements.add(divs);
 			allElements.add(doc.getElementsByTag("h1"));
 			allElements.add(doc.getElementsByTag("h2"));
 			allElements.add(doc.getElementsByTag("h3"));
@@ -56,7 +66,8 @@ public class WebsiteTextToCSV {
 			allElements.add(doc.getElementsByTag("h6"));
 			allElements.add(doc.getElementsByTag("p"));
 			allElements.add(doc.getElementsByTag("span"));
-
+		
+//
 			Elements links = doc.select("a");
 
 			for (Elements elements : allElements) {

@@ -3,9 +3,12 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
+
 import org.json.simple.JSONArray;
 
 import org.json.JSONObject;
@@ -81,6 +84,7 @@ public class Tokenizer {
 		Integer noOfTokens = null;
 		String[] elements;
 		JSONArray dataJson = new JSONArray();
+		Set<String> uniqueSentences = new HashSet<>();
 		while(sc.hasNext()) {
 			String sentence = sc.next();
 			elements = sentence.split(" ");
@@ -89,15 +93,21 @@ public class Tokenizer {
 				splittedSentences = split_sentence(sentence);
 
 			}
+			uniqueSentences.add(sentence);
 			
+			for(String str : splittedSentences) {
+				uniqueSentences.add(str);
+			}
+			
+		}
+		for(String sen : uniqueSentences) {
 			jsonObject = new JSONObject();
 			jsonObject.put("id", id++);
 			
-			jsonObject.put("sentence", sentence);
+			jsonObject.put("sentence", sen);
 			
 			dataJson.add(jsonObject);
 			
-			System.out.println(jsonObject);
 			
 		}
 		file.write(dataJson.toJSONString());

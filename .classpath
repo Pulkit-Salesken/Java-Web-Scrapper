@@ -23,24 +23,20 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Salesken/.m2/repository/com/opencsv/opencsv/5.5.2/opencsv-5.5.2.jar" sourcepath="C:/Users/Salesken/.m2/repository/com/opencsv/opencsv/5.5.2/opencsv-5.5.2-sources.jar">
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="org.eclipse.jst.component.archivename" value="opencsv-5.5.2.jar"/>
-			<attribute name="maven.groupId" value="com.opencsv"/>
-			<attribute name="maven.artifactId" value="opencsv"/>
-			<attribute name="maven.version" value="5.5.2"/>
-			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Salesken/.m2/repository/com/opencsv/opencsv/5.5/opencsv-5.5.jar" sourcepath="C:/Users/Salesken/.m2/repository/com/opencsv/opencsv/5.5/opencsv-5.5-sources.jar">
+	<classpathentry kind="lib" path="C:/Users/Salesken/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar" sourcepath="C:/Users/Salesken/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1-sources.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="org.eclipse.jst.component.archivename" value="opencsv-5.5.jar"/>
-			<attribute name="maven.groupId" value="com.opencsv"/>
-			<attribute name="maven.artifactId" value="opencsv"/>
-			<attribute name="maven.version" value="5.5"/>
-			<attribute name="maven.scope" value="compile"/>
+			<attribute name="test" value="true"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+			<attribute name="maven.groupId" value="com.vaadin.external.google"/>
+			<attribute name="maven.artifactId" value="android-json"/>
+			<attribute name="maven.version" value="0.0.20131108.vaadin1"/>
+			<attribute name="maven.scope" value="test"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Salesken/.m2/repository/org/json/json/20190722/json-20190722.jar" sourcepath="C:/Users/Salesken/.m2/repository/org/json/json/20190722/json-20190722-sources.jar">
@@ -50,6 +46,26 @@
 			<attribute name="maven.groupId" value="org.json"/>
 			<attribute name="maven.artifactId" value="json"/>
 			<attribute name="maven.version" value="20190722"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Salesken/.m2/repository/org/json/json/20220924/json-20220924.jar" sourcepath="C:/Users/Salesken/.m2/repository/org/json/json/20220924/json-20220924-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="json-20220924.jar"/>
+			<attribute name="maven.groupId" value="org.json"/>
+			<attribute name="maven.artifactId" value="json"/>
+			<attribute name="maven.version" value="20220924"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Salesken/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar" sourcepath="C:/Users/Salesken/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="json-simple-1.1.jar"/>
+			<attribute name="maven.groupId" value="com.googlecode.json-simple"/>
+			<attribute name="maven.artifactId" value="json-simple"/>
+			<attribute name="maven.version" value="1.1"/>
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
