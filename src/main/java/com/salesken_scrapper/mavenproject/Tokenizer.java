@@ -50,16 +50,21 @@ public class Tokenizer {
 		Integer tokenCount = 0;
 //		String chunk = "";
 		
+		ArrayList<String> tempChunks = new ArrayList<>();
+		
 		for(Map.Entry<String, Integer> chunk : map.entrySet()) {
 			if(tokenCount > maxTokenSize) {
-				chunks.add(chunk.getKey());
+				chunks.add(". ");
+				chunks.addAll(tempChunks);
+				chunks.add(".");
 				tokenCount = 0;
+				tempChunks.clear();
 			}
 			tokenCount += chunk.getValue();
+			tempChunks.add(chunk.getKey());
 		}
 		
 		return chunks;
-		
 		
 	}
 	
@@ -107,9 +112,9 @@ public class Tokenizer {
 			jsonObject.put("sentence", sen);
 			
 			dataJson.add(jsonObject);
-			
-			
+			System.out.println(jsonObject);
 		}
+		System.out.println("Writing Json Done...");
 		file.write(dataJson.toJSONString());
 		file.close();
 	}
