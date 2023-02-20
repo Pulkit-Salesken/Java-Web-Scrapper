@@ -64,7 +64,7 @@ public class GPT2Tokenizer {
         }
         return pairs;
     }
-
+    
     private Map<Integer, String> byteToUnicode() {
         List<Integer> bs = Stream.of(
                                      IntStream.range('!', '~' + 1).boxed(),

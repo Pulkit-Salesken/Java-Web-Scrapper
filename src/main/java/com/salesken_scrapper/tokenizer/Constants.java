@@ -1,4 +1,5 @@
-package ai.tunib.tokenizer;
+package com.salesken_scrapper.tokenizer;
+
 
 public class Constants {
     public static final String ENCODER_FILE_NAME = "encoder.json";
